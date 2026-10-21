@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ajouter un produit</title>
+    <link href="style.css" rel="stylesheet">
+</head>
+<body>
+    <div class="shell">
+        <aside class="side">
+            <div class="brand">Do And Go</div>
+            <small>Général</small>
+            <a href="index.html">Accueil</a>
+            <a href="cont.html">Commandes</a>
+            <a href="produit.html" class="on">Produits</a>
+            <a href="votre_boutique.html">Ma boutique</a>
+            <a href="commande.html">Ajouter un commande</a>
+            <a href="boutique.html">Boutique</a>
+        </aside>
+        <main class="main">
+            <h1 class="hello">Ajouter votre produit</h1>
+            <p class="sub">Remplissez les informations ci-dessous pour ajouter votre produit</p>
+            <form action="cont.html" class="panel" style="max-width:820px">
+                <span class="sec">Détails du produit</span>
+                <div class="grid g2">
+                    <div class="field full">
+                        <label for="pn">Nom du produit</label>
+                        <input type="text" id="pn" placeholder="Ex: T-shirt en coton" required>
+                    </div>
+                    <div class="field">
+                        <label for="pp">Prix (MAD)</label>
+                        <input type="number" id="pp" placeholder="199" required>
+                    </div>
+                    <div class="field">
+                        <label for="ps">Quantité / Stock</label>
+                        <input type="number" id="ps" placeholder="50" required>
+                    </div>
+                    <div class="field full">
+                        <label for="pi">Images du produit</label>
+                        <input type="file" id="pi" multiple accept="image/*" required>
+                    </div>
+                    <div class="field full">
+                        <label for="pd">Description du produit</label>
+                        <textarea id="pd" rows="4" placeholder="Décrivez votre produit..."></textarea>
+                    </div>
+                </div>
+                <button class="pill" type="submit">Enregistrer le produit</button>
+            </form>
+        </main>
+    </div>
+</body>
+</html>

@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ajouter une commande</title>
+    <link href="style.css" rel="stylesheet">
+</head>
+<body>
+    <div class="shell">
+    <aside class="side">
+      <div class="brand">Do And Go</div>
+      <small>Général</small>
+      <a href="index.html">Accueil</a>
+      <a href="cont.html">Commandes</a>
+      <a href="produit.html">Produits</a>
+      <a href="votre_boutique.html">Ma boutique</a>
+      <a href="commande.html" class="on">Ajouter un commande</a>
+      <a href="boutique.html">Boutique</a>
+    </aside>
+
+    <main class="main">
+      <h1 class="hello">Ajouter votre commande</h1>
+      <p class="sub">Remplissez les informations ci-dessous pour ajouter votre commande</p>
+
+      <form action="cont.html" method="get" class="panel" style="max-width:820px">
+        <span class="sec">Détails de la commande</span>
+        <div class="grid g2">
+          <div class="field full">
+            <label for="pn">Nom du client</label>
+            <input type="text" id="pn" placeholder="Ex: Jean bleu" required>
+          </div>
+          <div class="field full">
+            <label for="pn">Nom du produit</label>
+            <input type="text" id="pn" placeholder="Ex: T-shirt en coton" required>
+          </div>
+          <div class="field full">
+            <label for="pn">Ville</label>
+            <input type="text" id="pn" placeholder="Ex: Agadir" required>
+          </div>
+          <div class="field full">
+            <label for="pn">Numéro de téléphone</label>
+            <input type="text" id="pn" placeholder="Ex: 0600000000" required>
+          </div>
+          <div class="field full">
+            <label for="pn">Lien de la localisation GPS</label>
+            <input type="url" id="pn" placeholder="Ex: https://maps.google.com/?q=30.4278,-9.5981" required>
+          </div>
+        </div>
+        <button class="pill" type="submit">Enregistrer la commande</button>
+      </form>
+    </main>
+  </div>
+</body>
+</html>

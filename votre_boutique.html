@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Configuration de la boutique</title>
+    <link href="style.css" rel="stylesheet">
+</head>
+<body>
+   <div class="shell">
+        <aside class="side">
+            <div class="brand">Do And Go</div>
+            <small>Général</small>
+            <a href="index.html">Accueil</a>
+            <a href="cont.html">Commandes</a>
+            <a href="produit.html">Produits</a>
+            <a href="votre_boutique.html" class="on">Ma boutique</a>
+            <a href="commande.html">Ajouter une commande</a>
+            <a href="boutique.html">Boutique</a>
+        </aside>
+        <main class="main">
+            <h1 class="hello">Configuration de votre boutique</h1>
+            <p class="sub">Remplissez les informations ci-dessous pour créer votre espace vendeur</p>
+            <form action="produit.html" class="panel">
+                <span class="sec">1. Identité de la boutique</span>
+                <div class="grid g2">
+                    <div class="field">
+                        <label for="sn">Nom de la boutique</label>
+                        <input id="sn" placeholder="Ex: Boutique Élégance" required>
+                    </div>
+                    <div class="field">
+                        <label for="sl">Ville / Emplacement</label>
+                        <input id="sl" placeholder="Ex: Casablanca, Marrakech..." required>
+                    </div>
+                    <div class="field">
+                        <label for="lg">Logo (carré, 500x500 px)</label>
+                        <input type="file" id="lg" accept="image/*">
+                    </div>
+                    <div class="field">
+                        <label for="bn">Bannière (format couverture Facebook)</label>
+                        <input type="file" id="bn" accept="image/*">
+                    </div>
+                    <div class="field full">
+                        <label for="ds">Description courte</label>
+                        <textarea id="ds" rows="3" placeholder="Décrivez votre boutique et vos produits en une ou deux phrases..."></textarea>
+                    </div>
+                    <div class="field full"><label for="ct">Catégorie / Secteur d'activité</label>
+                        <select id="ct" required>
+                            <option value="" selected disabled>Sélectionnez une catégorie</option>
+                            <option>Vêtements et Mode</option>
+                            <option>Électronique et High-Tech</option>
+                            <option>Produits du terroir et Maghreb</option>
+                            <option>Maison et Décoration</option>
+                            <option>Beauté et Cosmétique</option>
+                            <option>Autre</option>
+                        </select>
+                    </div>
+                </div>
+                <span class="sec mt">2. Contact et réseaux sociaux</span>
+                <div class="grid g2">
+                    <div class="field">
+                        <label for="wa">Numéro WhatsApp pour les commandes</label>
+                        <input type="tel" id="wa" placeholder="+212 600000000" required>
+                    </div>
+                    <div class="field">
+                        <label for="ig">Lien Instagram</label>
+                        <input type="url" id="ig" placeholder="https://instagram.com/votre_boutique">
+                    </div>
+                    <div class="field">
+                        <label for="fb">Lien Page Facebook</label>
+                        <input type="url" id="fb" placeholder="https://facebook.com/votre_page">
+                    </div>
+                    <div class="field">
+                        <label for="tk">Lien TikTok</label>
+                        <input type="url" id="tk" placeholder="https://tiktok.com/@votre_compte">
+                    </div>
+                </div>
+                <span class="sec mt">3. Livraison et retours</span>
+                <label>Acceptez-vous le retour des marchandises ?</label>
+                <div class="inline">
+                    <label class="check"><input type="radio" name="rp" required> Oui</label>
+                    <label class="check"><input type="radio" name="rp"> Non</label>
+                </div>
+                <div class="mt">
+                    <button class="pill" type="submit">Enregistrer la boutique</button>
+                </div>
+            </form>
+        </main>
+    </div> 
+</body>
+</html>

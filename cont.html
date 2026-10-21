@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tableau de bord - Commandes</title>
+    <link href="style.css" rel="stylesheet">
+</head>
+<body>
+    <div class="shell">
+        <aside class="side">
+            <div class="brand">Do And Go</div>
+            <small>Général</small>
+            <a href="index.html">Accueil</a>
+            <a href="cont.html" class="on">Commandes</a>
+            <a href="produit.html">Produits</a>
+            <a href="votre_boutique.html">Ma boutique</a>
+            <a href="commande.html">Ajouter une commande</a>
+            <a href="boutique.html">Boutique</a>
+        </aside>
+        <main class="main">
+            <h1 class="hello">Bonjour, vendeur</h1>
+            <p class="sub">Voici l'état de vos commandes aujourd'hui.</p>
+            <div class="grid g4 mb">
+                <div class="tile t-yellow">
+                    <h6>Nouvelles</h6>
+                    <div class="n">8</div><small>0%</small>
+                </div>
+                <div class="tile t-sand">
+                    <h6>Pas de réponse</h6>
+                    <div class="n">6</div><small>0%</small>
+                </div>
+                <div class="tile t-pink">
+                    <h6>Annulées</h6>
+                    <div class="n">351</div><small>0%</small>
+                </div>
+                <div class="tile t-pink">
+                    <h6>Erronées</h6>
+                    <div class="n">277</div><small>0%</small>
+                </div>
+                <div class="tile t-green">
+                    <h6>Out Of Stock</h6>
+                    <div class="n">250</div><small>0%</small>
+                </div>
+                <div class="tile t-sand">
+                    <h6>Prêtes à l'expédition</h6>
+                    <div class="n">43</div><small>0%</small>
+                </div>
+                <div class="tile t-blue">
+                    <h6>En transit</h6>
+                    <div class="n">45</div><small>0%</small>
+                </div>
+                <div class="tile t-green">
+                    <h6>Livrées</h6>
+                    <div class="n">1,529</div><small>0%</small>
+                </div>
+            </div>
+            <div class="panel">
+                <div class="toolbar">
+                    <input class="search" placeholder="Téléphone, Référence, N° de suivi...">
+                    <a href="commande.html" class="pill">+ Ajouter</a>
+                </div>
+                <div class="tbl-wrap">
+                    <table class="tbl">
+                        <thead>
+                            <tr>
+                                <th>Appels</th>
+                                <th>Nom</th>
+                                <th>Qté / Prix</th>
+                                <th>Ville</th>
+                                <th>Statut</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr>
+                                <td>0</td>
+                                <td><b>rahma rami</b></td>
+                                <td><span class="thumb"></span>1x 199 DH</td>
+                                <td>Casablanca</td>
+                                <td><span class="chip">Nouvelle</span></td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </div>
+            </div>
+        </main>
+    </div>
+</body>
+</html>
